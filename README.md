@@ -1,6 +1,6 @@
 On system with @iww.org keys, in directory **.well-known**, run:
 
-```
+```sh
 gpg --list-options show-only-fpr-mbox -k "@iww.org" | $(gpgconf --list-dirs libexecdir)/gpg-wks-client -v --install-key
 ```
 
@@ -8,7 +8,7 @@ gpg --list-options show-only-fpr-mbox -k "@iww.org" | $(gpgconf --list-dirs libe
 
 To test, run:
 
-```
+```sh
 gpg --auto-key-locate clear,wkd,nodefault --verbose --locate-key example@iww.org
 ```
 
