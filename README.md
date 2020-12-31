@@ -1,6 +1,6 @@
 # OpenPGP Web Key Directory for [iww.org](https://iww.org)
 
-On system with @iww.org keys, `cd` into directory **.well-known**, and run:
+On system with @iww.org keys, `cd`{:.language-sh} into directory **.well-known**, and run:
 
 ```sh
 gpg --list-options show-only-fpr-mbox -k "@iww.org" | $(gpgconf --list-dirs libexecdir)/gpg-wks-client -v --install-key
