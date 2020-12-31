@@ -1,4 +1,4 @@
-# OpenPGP Web Key Directory for iww.org
+# OpenPGP Web Key Directory for [iww.org](https://iww.org)
 
 On system with @iww.org keys, in directory **.well-known**, run:
 
