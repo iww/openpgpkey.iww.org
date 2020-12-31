@@ -1,3 +1,5 @@
+# OpenPGP Web Key Directory for iww.org
+
 On system with @iww.org keys, in directory **.well-known**, run:
 
 ```sh
@@ -6,7 +8,7 @@ gpg --list-options show-only-fpr-mbox -k "@iww.org" | $(gpgconf --list-dirs libe
 
 *Requires **GPG >= 2.2.12** with **gpg-wks-client** (on macOS, must compile from [source](https://gnupg.org/download/index.html)).*
 
-To test, run:
+To test WKD, run:
 
 ```sh
 gpg --auto-key-locate clear,wkd,nodefault --verbose --locate-key example@iww.org
