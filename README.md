@@ -6,6 +6,12 @@ gpg --list-options show-only-fpr-mbox -k "@iww.org" | $(gpgconf --list-dirs libe
 
 *Requires **GPG >= 2.2.12** with **gpg-wks-client** (on macOS, must compile from [source](https://gnupg.org/download/index.html)).*
 
+To test, run:
+
+```
+gpg --auto-key-locate clear,wkd,nodefault --verbose --locate-key *example*@iww.org
+```
+
 References:
 - https://wiki.gnupg.org/WKDHosting
 - https://tools.ietf.org/id/draft-koch-openpgp-webkey-service-05.html
