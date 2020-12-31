@@ -8,4 +8,5 @@ gpg --list-options show-only-fpr-mbox -k "@iww.org" | $(gpgconf --list-dirs libe
 
 References:
 - https://wiki.gnupg.org/WKDHosting
+- https://tools.ietf.org/id/draft-koch-openpgp-webkey-service-05.html
 - https://github.com/mihalyr/openpgpkey
